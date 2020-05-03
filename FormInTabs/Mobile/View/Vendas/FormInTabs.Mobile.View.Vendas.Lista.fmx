@@ -1,0 +1,78 @@
+inherited FormVendaLista: TFormVendaLista
+  Caption = 'FormModel1'
+  DesignerMasterStyle = 0
+  inherited lytBackground: TLayout
+    inherited tbcMain: TTabControl
+      Sizes = (
+        340s
+        511s
+        340s
+        511s)
+      inherited tbiMain: TTabItem
+        ExplicitSize.cx = 170.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited lytMain: TLayout
+          inherited lytHeader: TLayout
+            inherited rctHeader: TRectangle
+              inherited lblHeader: TLabel
+                Text = 'Vendas [0]'
+              end
+              inherited btnHeaderRight: TButton
+                OnClick = btnHeaderRightClick
+                inherited pthHeaderRight: TPath
+                  Data.Path = {
+                    0E00000000000000000098410000504101000000000050410000504101000000
+                    0000504100009841010000000000304100009841010000000000304100005041
+                    010000000000A04000005041010000000000A040000030410100000000003041
+                    0000304101000000000030410000A04001000000000050410000A04001000000
+                    0000504100003041010000000000984100003041010000000000984100005041
+                    030000000000984100005041}
+                end
+              end
+            end
+          end
+          inherited vtsList: TVertScrollBox
+            Viewport.Width = 340.000000000000000000
+            Viewport.Height = 461.000000000000000000
+            object Button1: TButton
+              Position.X = 112.000000000000000000
+              Position.Y = 112.000000000000000000
+              TabOrder = 0
+              Text = 'ComThread'
+              OnClick = Button1Click
+            end
+            object Button2: TButton
+              Position.X = 112.000000000000000000
+              Position.Y = 144.000000000000000000
+              TabOrder = 1
+              Text = 'SemThread'
+              OnClick = Button2Click
+            end
+            object Button3: TButton
+              Position.X = 120.000000000000000000
+              Position.Y = 48.000000000000000000
+              TabOrder = 2
+              Text = 'Clicar'
+            end
+            object Label1: TLabel
+              Position.X = 64.000000000000000000
+              Position.Y = 200.000000000000000000
+              Text = 'Label1'
+              TabOrder = 3
+            end
+            object Label2: TLabel
+              Position.X = 64.000000000000000000
+              Position.Y = 232.000000000000000000
+              Text = 'Label2'
+              TabOrder = 4
+            end
+          end
+        end
+      end
+      inherited tbiAux: TTabItem
+        ExplicitSize.cx = 170.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+      end
+    end
+  end
+end
